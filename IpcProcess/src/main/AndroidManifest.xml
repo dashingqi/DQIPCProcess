@@ -6,15 +6,9 @@
             android:name=".process.test.OtherProcessService"
             android:exported="false"
             android:process=":otherProcess" />
-
         <provider
             android:name=".process.ipc.IpcMainProcessDelegateProvider"
-            android:authorities="${applicationId}.IpcMainDelegateProvider"
-            android:exported="false" />
-
-        <provider
-            android:name=".process.ipc.ContextProvider"
-            android:authorities="${applicationId}.contextprovider"
+            android:authorities="com.dashingqi.dqipcprocess.IpcMainDelegateProvider"
             android:exported="false" />
     </application>
 

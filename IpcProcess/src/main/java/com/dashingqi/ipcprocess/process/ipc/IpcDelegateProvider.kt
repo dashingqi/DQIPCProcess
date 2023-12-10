@@ -12,6 +12,7 @@ import com.dashingqi.ipcprocess.process.ipc.DelegateResultCode.Companion.OK_ERRO
 open class IpcDelegateProvider : SimpleContentProvider() {
 
     override fun call(method: String, arg: String?, extras: Bundle?): Bundle? {
+        "call perform".logD()
         val delegateBundle = Bundle()
         val delegateProvider = createDelegateProviderInstance(method) ?: return delegateBundle.apply {
             putInt(KEY_RESULT_CODE, CALL_ERROR_CODE)
@@ -35,7 +36,7 @@ open class IpcDelegateProvider : SimpleContentProvider() {
             }
             return newInstance
         }.onFailure {
-            it.message.logD()
+            it.printStack()
         }
         return null
     }
