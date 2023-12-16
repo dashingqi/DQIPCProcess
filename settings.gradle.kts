@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DQIPCProcess"
+rootProject.name = "DQPro"
 include(":app")
 include(":IpcProcess")
