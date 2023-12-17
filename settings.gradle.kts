@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "DQPro"
 include(":app")
-include(":IpcProcess")
+include(":ipcprocess")
 include(":fsm")
