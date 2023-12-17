@@ -1,5 +1,7 @@
 package com.dashingqi.fsm
 
+import kotlin.reflect.KClass
+
 /**
  * @desc :
  * @author : zhangqi
@@ -59,6 +61,20 @@ class StateMachine<T>(
      * 状态反转到之前状态
      */
     fun revertToPreState() {
-      preState?.let { changeState(it) }
+        preState?.let { changeState(it) }
+    }
+
+    /**
+     * 当前状态机状态是否为指定状态【State 对象】
+     */
+    fun isAssignState(state: State<T>): Boolean {
+        return isAssignState(state.javaClass)
+    }
+
+    /**
+     * 当前状态机状态是否为指定状态【 Class 对象】
+     */
+    fun isAssignState(stateClass: Class<Any>): Boolean {
+        return curState?.javaClass == stateClass
     }
 }
