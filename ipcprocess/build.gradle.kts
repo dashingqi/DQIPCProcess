@@ -1,7 +1,17 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+
 }
+//apply {
+//    from("$rootDir/publish-mavencentral.gradle")
+//}
+
+//ext{
+//    PUBLISH_GROUP_ID = "io.github.dashingqi"        //项目包名
+//    PUBLISH_ARTIFACT_ID = 'ipcprocess'            //项目名
+//    PUBLISH_VERSION = '0.0.1'
+//}
 
 android {
     namespace = "com.dashingqi.ipcprocess"
