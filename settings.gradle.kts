@@ -19,3 +19,4 @@ rootProject.name = "DQPro"
 include(":app")
 include(":ipcprocess")
 include(":fsm")
+include(":threads")
