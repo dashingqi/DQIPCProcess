@@ -1,4 +1,4 @@
-package com.dashingqi.threads
+package com.dashingqi.threads.ui
 
 import android.os.Handler
 import android.os.Looper
