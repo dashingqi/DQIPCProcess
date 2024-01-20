@@ -7,5 +7,20 @@ package com.dashingqi.threads.executor
  */
 object ThreadExecutors {
 
-//    fun post
+    /**
+     * 提交任务到调度器中
+     */
+    @JvmStatic
+    fun postOnExecutors(runnable: Runnable, taskName: String, delay: Long = 0L) {
+
+
+    }
+
+    /**
+     * 提交任务到单个调度器中
+     */
+    @JvmStatic
+    fun postOnSingleExecutor(runnable: Runnable, taskName: String, delay: Long = 0L) {
+
+    }
 }
