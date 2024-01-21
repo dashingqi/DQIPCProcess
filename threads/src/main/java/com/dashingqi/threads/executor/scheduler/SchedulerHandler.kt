@@ -1,8 +1,10 @@
-package com.dashingqi.threads.executor
+package com.dashingqi.threads.executor.scheduler
 
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
+import com.dashingqi.threads.executor.TaskInfo
+import com.dashingqi.threads.executor.constant.MSG_INSERT_TASK
 
 /**
  * @desc : 任务调度 Handler
@@ -14,6 +16,9 @@ class SchedulerHandler(looper: Looper = Looper.getMainLooper()) : Handler(looper
         super.handleMessage(msg)
         when (msg.what) {
             MSG_INSERT_TASK -> {
+                if (msg.obj is TaskInfo){
+                    // 插入消息进队列
+                }
 
             }
         }

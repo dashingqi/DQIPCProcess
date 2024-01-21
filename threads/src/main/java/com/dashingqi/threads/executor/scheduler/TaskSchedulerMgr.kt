@@ -1,6 +1,9 @@
-package com.dashingqi.threads.executor
+package com.dashingqi.threads.executor.scheduler
 
 import android.os.Message
+import com.dashingqi.threads.executor.TaskInfo
+import com.dashingqi.threads.executor.constant.MSG_INSERT_TASK
+
 /**
  * @desc : 任务调度器管理者
  * @author : zhangqi
