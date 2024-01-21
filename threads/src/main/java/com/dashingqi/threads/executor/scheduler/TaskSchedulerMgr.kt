@@ -1,7 +1,7 @@
 package com.dashingqi.threads.executor.scheduler
 
 import android.os.Message
-import com.dashingqi.threads.executor.TaskInfo
+import com.dashingqi.threads.executor.task.TaskInfo
 import com.dashingqi.threads.executor.constant.MSG_INSERT_TASK
 
 /**
