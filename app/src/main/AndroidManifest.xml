@@ -15,7 +15,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:supportsPictureInPicture="true"
+            android:resizeableActivity="true"
             android:label="@string/app_name"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:theme="@style/Theme.DQIPCProcess">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
